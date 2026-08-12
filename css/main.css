@@ -1499,7 +1499,7 @@ pre code {
     transition: all 0.2s ease-in-out;
   }
   .links-of-author a::before {
-    background: #ffdae7;
+    background: #c696ff;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3546,6 +3546,36 @@ body {
   background: #a29bfe !important;
   border-color: #a29bfe !important;
 }
+.home-more {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0 30px;
+}
+.home-more-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 138px;
+  padding: 11px 24px;
+  border: 1px solid rgba(162,155,254,0.38);
+  border-radius: 999px;
+  background: rgba(20,20,35,0.72);
+  color: #c9c4ff !important;
+  font-family: 'Outfit', "Segoe UI", sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-decoration: none !important;
+  box-shadow: 0 7px 22px rgba(0,0,0,0.24), 0 0 14px rgba(108,92,231,0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: transform 0.25s ease, color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.home-more-link:hover {
+  color: #fff !important;
+  border-color: rgba(116,185,255,0.62);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.3), 0 0 20px rgba(116,185,255,0.22);
+}
 .about-container {
   display: flex;
   justify-content: center;
@@ -3749,6 +3779,7 @@ body {
     transition: none !important;
   }
   #random-post-btn:hover,
+  .home-more-link:hover,
   .main-inner.index .post-block:hover {
     transform: none !important;
   }
