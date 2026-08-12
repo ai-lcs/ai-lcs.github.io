@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.2">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/lcs-apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/lcs-favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/lcs-favicon-16.png">
+  <link rel="mask-icon" href="/images/lcs-favicon.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/#6c5ce7/pace-theme-minimal.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous" defer></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"ai-lcs.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.28.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":true,"color":"#6c5ce7","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="先容我打消你们的一个顾虑。我不会在接下来的半个小时里，一直感谢你们参加这次会议，也不会感谢你们放下手头的工作，专程来到剑桥。 再打消你们可能有的另一个顾虑：我也不会让大家再听一遍我对往事的追忆。过去这些年，我已经一本正经地发表过不少这样的回忆，偶尔还会对现实稍作润色。 这两个选项都排除以后，我反倒不知道该给这次演讲起什么题目了。幸好，我想起了 20 世纪 50 年代末麻省理工学院的一次学术报告，那">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我真希望当年有人教过我的十堂课（Gian-Carlo Rota）">
+<meta property="og:url" content="https://ai-lcs.github.io/2026/08/12/%E6%88%91%E7%9C%9F%E5%B8%8C%E6%9C%9B%E5%BD%93%E5%B9%B4%E6%9C%89%E4%BA%BA%E6%95%99%E8%BF%87%E6%88%91%E7%9A%84%E5%8D%81%E5%A0%82%E8%AF%BE%EF%BC%88Gian-Carlo-Rota%EF%BC%89/index.html">
+<meta property="og:site_name" content="LCS 的数学与 AI 世界">
+<meta property="og:description" content="先容我打消你们的一个顾虑。我不会在接下来的半个小时里，一直感谢你们参加这次会议，也不会感谢你们放下手头的工作，专程来到剑桥。 再打消你们可能有的另一个顾虑：我也不会让大家再听一遍我对往事的追忆。过去这些年，我已经一本正经地发表过不少这样的回忆，偶尔还会对现实稍作润色。 这两个选项都排除以后，我反倒不知道该给这次演讲起什么题目了。幸好，我想起了 20 世纪 50 年代末麻省理工学院的一次学术报告，那">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-08-12T13:00:26.000Z">
+<meta property="article:modified_time" content="2026-08-12T13:01:03.622Z">
+<meta property="article:author" content="LCS">
+<meta property="article:tag" content="人工智能">
+<meta property="article:tag" content="数学">
+<meta property="article:tag" content="深度学习">
+<meta property="article:tag" content="编程">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://ai-lcs.github.io/2026/08/12/%E6%88%91%E7%9C%9F%E5%B8%8C%E6%9C%9B%E5%BD%93%E5%B9%B4%E6%9C%89%E4%BA%BA%E6%95%99%E8%BF%87%E6%88%91%E7%9A%84%E5%8D%81%E5%A0%82%E8%AF%BE%EF%BC%88Gian-Carlo-Rota%EF%BC%89/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://ai-lcs.github.io/2026/08/12/%E6%88%91%E7%9C%9F%E5%B8%8C%E6%9C%9B%E5%BD%93%E5%B9%B4%E6%9C%89%E4%BA%BA%E6%95%99%E8%BF%87%E6%88%91%E7%9A%84%E5%8D%81%E5%A0%82%E8%AF%BE%EF%BC%88Gian-Carlo-Rota%EF%BC%89/","path":"2026/08/12/我真希望当年有人教过我的十堂课（Gian-Carlo-Rota）/","title":"我真希望当年有人教过我的十堂课（Gian-Carlo Rota）"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>我真希望当年有人教过我的十堂课（Gian-Carlo Rota） | LCS 的数学与 AI 世界</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.1.0/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script><script src="/js/bookmark.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+  <script src="/js/third-party/pace.js" defer></script>
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js" defer></script>
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">LCS 的数学与 AI 世界</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Mathematics & Artificial Intelligence</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%81%9A%E8%AE%B2%E5%BA%A7"><span class="nav-number">1.</span> <span class="nav-text">做讲座</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%AF%8F%E5%9C%BA%E8%AE%B2%E5%BA%A7%E5%8F%AA%E8%AE%B2%E6%B8%85%E4%B8%80%E4%B8%AA%E6%A0%B8%E5%BF%83%E8%A7%82%E7%82%B9"><span class="nav-number">1.1.</span> <span class="nav-text">1. 每场讲座只讲清一个核心观点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%B0%B8%E8%BF%9C%E4%B8%8D%E8%A6%81%E8%B6%85%E6%97%B6"><span class="nav-number">1.2.</span> <span class="nav-text">2. 永远不要超时</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%92%8C%E4%BD%A0%E7%9A%84%E5%90%AC%E4%BC%97%E5%BB%BA%E7%AB%8B%E8%81%94%E7%B3%BB"><span class="nav-number">1.3.</span> <span class="nav-text">3. 和你的听众建立联系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E7%BB%99%E4%BB%96%E4%BB%AC%E4%B8%80%E7%82%B9%E8%83%BD%E5%B8%A6%E5%9B%9E%E5%AE%B6%E7%9A%84%E4%B8%9C%E8%A5%BF"><span class="nav-number">1.4.</span> <span class="nav-text">4. 给他们一点能带回家的东西</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%BB%91%E6%9D%BF%E4%B8%8A%E7%9A%84%E6%8A%80%E5%B7%A7"><span class="nav-number">2.</span> <span class="nav-text">黑板上的技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E7%A1%AE%E4%BF%9D%E9%BB%91%E6%9D%BF%E5%B9%B2%E5%B9%B2%E5%87%80%E5%87%80"><span class="nav-number">2.1.</span> <span class="nav-text">1. 确保黑板干干净净</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E4%BB%8E%E5%B7%A6%E4%B8%8A%E8%A7%92%E5%BC%80%E5%A7%8B%E5%86%99"><span class="nav-number">2.2.</span> <span class="nav-text">2. 从左上角开始写</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%8C%E4%B8%80%E4%B8%AA%E7%BB%93%E6%9E%9C%EF%BC%8C%E4%B8%8D%E5%A6%A8%E5%8F%91%E8%A1%A8%E5%A5%BD%E5%87%A0%E6%AC%A1"><span class="nav-number">3.</span> <span class="nav-text">同一个结果，不妨发表好几次</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9C%9F%E6%AD%A3%E8%AE%A9%E4%BA%BA%E8%AE%B0%E4%BD%8F%E4%BD%A0%E7%9A%84%EF%BC%8C%E5%BE%80%E5%BE%80%E6%98%AF%E4%BD%A0%E7%9A%84%E9%98%90%E9%87%8A%E6%80%A7%E5%B7%A5%E4%BD%9C"><span class="nav-number">4.</span> <span class="nav-text">真正让人记住你的，往往是你的阐释性工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AF%8F%E4%B8%AA%E6%95%B0%E5%AD%A6%E5%AE%B6%E7%9C%9F%E6%AD%A3%E6%8B%BF%E6%89%8B%E7%9A%84%E6%8B%9B%E6%95%B0%E9%83%BD%E4%B8%8D%E5%A4%9A"><span class="nav-number">5.</span> <span class="nav-text">每个数学家真正拿手的招数都不多</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%AB%E5%A4%AA%E6%8B%85%E5%BF%83%E8%87%AA%E5%B7%B1%E7%8A%AF%E7%9A%84%E9%94%99%E8%AF%AF"><span class="nav-number">6.</span> <span class="nav-text">别太担心自己犯的错误</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E8%B4%B9%E6%9B%BC%E6%96%B9%E6%B3%95"><span class="nav-number">7.</span> <span class="nav-text">使用费曼方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%B4%E8%B0%A2%E8%A6%81%E5%A4%A7%E6%96%B9"><span class="nav-number">8.</span> <span class="nav-text">致谢要大方</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8A%8A%E5%BC%95%E8%A8%80%E5%86%99%E5%BE%97%E6%9C%89%E4%BF%A1%E6%81%AF%E9%87%8F"><span class="nav-number">9.</span> <span class="nav-text">把引言写得有信息量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E8%80%81%E5%8E%BB%E5%81%9A%E5%A5%BD%E5%87%86%E5%A4%87"><span class="nav-number">10.</span> <span class="nav-text">为老去做好准备</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="LCS"
+      src="https://github.com/ai-lcs.png">
+  <p class="site-author-name" itemprop="name">LCS</p>
+  <div class="site-description" itemprop="description">探索数学与人工智能的无限可能</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">30</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+  </div>
+<div id="sidebar-poem">
+  <div class="poem-line">雄关漫道真如铁，</div>
+  <div class="poem-line">而今迈步从头越。</div>
+</div>
+
+<div id="sidebar-status" aria-label="博客运行状态">
+  <div class="status-line status-online">
+    <span class="status-dot" aria-hidden="true"></span>
+    <span>SYSTEM ONLINE</span>
+  </div>
+  <div class="status-line status-clock">
+    <span>CST</span>
+    <time id="sidebar-clock">--:--:--</time>
+  </div>
+  <div class="status-line status-words">
+    <span id="sidebar-word-count">--</span>
+    <span>WORDS</span>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://ai-lcs.github.io/2026/08/12/%E6%88%91%E7%9C%9F%E5%B8%8C%E6%9C%9B%E5%BD%93%E5%B9%B4%E6%9C%89%E4%BA%BA%E6%95%99%E8%BF%87%E6%88%91%E7%9A%84%E5%8D%81%E5%A0%82%E8%AF%BE%EF%BC%88Gian-Carlo-Rota%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://github.com/ai-lcs.png">
+      <meta itemprop="name" content="LCS">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LCS 的数学与 AI 世界">
+      <meta itemprop="description" content="探索数学与人工智能的无限可能">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="我真希望当年有人教过我的十堂课（Gian-Carlo Rota） | LCS 的数学与 AI 世界">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          我真希望当年有人教过我的十堂课（Gian-Carlo Rota）
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2026-08-12 21:00:26 / 修改时间：21:01:03" itemprop="dateCreated datePublished" datetime="2026-08-12T21:00:26+08:00">2026-08-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%98%85%E8%AF%BB/" itemprop="url" rel="index"><span itemprop="name">阅读</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>4.9k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>18 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>先容我打消你们的一个顾虑。我不会在接下来的半个小时里，一直感谢你们参加这次会议，也不会感谢你们放下手头的工作，专程来到剑桥。</p>
+<p>再打消你们可能有的另一个顾虑：我也不会让大家再听一遍我对往事的追忆。过去这些年，我已经一本正经地发表过不少这样的回忆，偶尔还会对现实稍作润色。</p>
+<p>这两个选项都排除以后，我反倒不知道该给这次演讲起什么题目了。幸好，我想起了 20 世纪 50 年代末麻省理工学院的一次学术报告，那也是我到 MIT 后最早参加的几次报</p>
+<span id="more"></span>
+
+<p>告之一。主讲人是欧金尼奥·卡拉比（Eugenio Calabi）。听众第一排坐着诺伯特·维纳（Norbert Wiener）——他照例一直睡到该鼓掌时才醒——以及迪尔克·斯特鲁伊克（Dirk Struik）。卡拉比 40 年代在 MIT 读本科时，斯特鲁伊克曾是他的老师之一。</p>
+<p>那场报告的内容完全超出了我的能力范围。开讲五分钟以后，我就彻底听不懂了。报告结束时，主讲人与几位听众之间发生了一段高深莫测的对话——如果我没记错，是安布罗斯（Ambrose）和辛格（Singer）。随后，全场陷入一阵紧张的沉默。</p>
+<p>斯特鲁伊克教授打破了僵局。他举起手说：“给我们点能带回家的东西吧！”卡拉比照办了。接下来的五分钟里，他用漂亮而朴素的语言，把整场报告的要旨讲得清清楚楚。所有人离场时都心满意足。</p>
+<p>斯特鲁伊克是对的：演讲者应该努力给听众留下一点能“带回家”的东西。</p>
+<p>可究竟该带走什么呢？这些年来，我陆陆续续收集了一些零碎的忠告，都是我不断拿来提醒自己的“该做”和“不该做”——而这些错误，我过去犯过，将来也免不了继续犯。你们当中有些人，大概已经听我念叨过其中一两条。把它们集中起来，放进一次演讲里，虽然同样有些自以为是，但大概已经算是几种选择里不那么令人讨厌的一种了。</p>
+<p>我们给别人的忠告，往往正是我们自己最需要听的忠告。对我来说，现在才来学这些道理已经太晚了，所以我只好通过把它们讲给你们听，来完成自己一直没有完成的功课。下面这些忠告，我会按照“争议越来越大”的顺序来说。</p>
+<h2 id="做讲座"><a href="#做讲座" class="headerlink" title="做讲座"></a>做讲座</h2><p>根据我过去四十六年里听数学报告的经验，下面四条对一场好讲座的要求，似乎并没有想象中那么显而易见。</p>
+<h3 id="1-每场讲座只讲清一个核心观点"><a href="#1-每场讲座只讲清一个核心观点" class="headerlink" title="1. 每场讲座只讲清一个核心观点"></a>1. 每场讲座只讲清一个核心观点</h3><p>德国哲学家 G. W. F. 黑格尔说过，一个哲学家如果太频繁地使用“并且”这个词，那他就不可能是个好哲学家。至少在做讲座这件事上，我觉得他说得对。</p>
+<p>每场讲座都应该有一个核心观点，然后像一个不断变奏的主题一样，把它反复讲清楚。听众就像一群牛，会慢慢朝你赶它们去的方向移动。如果我们只讲一个重点，那么听众还有很大机会朝正确的方向走；如果我们同时讲好几个重点，这群牛就会四散到整片田野里。听众会失去兴趣，然后每个人都会重新回到那些为了来听你讲座而暂时放下的念头上。</p>
+<h3 id="2-永远不要超时"><a href="#2-永远不要超时" class="headerlink" title="2. 永远不要超时"></a>2. 永远不要超时</h3><p>超时是演讲者唯一不可原谅的错误。</p>
+<p>五十分钟以后——冯·诺依曼过去把这叫作“一个微世纪”——所有人的注意力都会转移到别处，哪怕我们正在试图证明黎曼猜想也一样。仅仅超时一分钟，就足以毁掉一场原本非常精彩的讲座。</p>
+<h3 id="3-和你的听众建立联系"><a href="#3-和你的听众建立联系" class="headerlink" title="3. 和你的听众建立联系"></a>3. 和你的听众建立联系</h3><p>走进报告厅时，试着从听众里找出一个你多少熟悉其工作的人。然后迅速调整你的讲稿，想办法提到这个人的某项工作。</p>
+<p>这样一来，你至少可以保证有一个人会全神贯注地听完整场报告，而且顺带还能交到一个朋友。</p>
+<p>每个来听你讲座的人，心里其实都偷偷怀着同一个愿望：希望你会提到他的工作。</p>
+<h3 id="4-给他们一点能带回家的东西"><a href="#4-给他们一点能带回家的东西" class="headerlink" title="4. 给他们一点能带回家的东西"></a>4. 给他们一点能带回家的东西</h3><p>斯特鲁伊克教授的忠告其实并不容易做到。要说一场讲座的哪些东西会永远留在听众记忆里，倒容易得多——可答案并不怎么体面。</p>
+<p>我经常会在机场、街上，偶尔也在一些颇为尴尬的场合，遇见曾经选过我一门或几门课的 MIT 校友。大多数时候，他们都会坦白承认，早已忘了那门课到底讲什么，也忘了我自以为教会了他们的全部数学。</p>
+<p>可他们会兴高采烈地想起我讲过的某个笑话、某段轶事、某个怪癖、某句题外话，或者我当年犯过的某个错误。</p>
+<h2 id="黑板上的技巧"><a href="#黑板上的技巧" class="headerlink" title="黑板上的技巧"></a>黑板上的技巧</h2><p>这里有两点。</p>
+<h3 id="1-确保黑板干干净净"><a href="#1-确保黑板干干净净" class="headerlink" title="1. 确保黑板干干净净"></a>1. 确保黑板干干净净</h3><p>尤其重要的是，要把那些因为板擦擦得不均匀而留下的、令人分心的旋涡状痕迹彻底擦掉。</p>
+<p>从一块一尘不染的黑板开始，会在不知不觉中给听众留下一个印象：他们接下来要听到的讲座，也会同样干净利落。</p>
+<h3 id="2-从左上角开始写"><a href="#2-从左上角开始写" class="headerlink" title="2. 从左上角开始写"></a>2. 从左上角开始写</h3><p>我们写在黑板上的内容，应该正好对应一个认真听讲的人希望抄进笔记本里的东西。</p>
+<p>最好写得慢一点，字写大一点，不要使用缩写。那些认真做笔记的听众，其实是在帮我们的忙；我们理应让他们抄得轻松一些。</p>
+<p>如果不用黑板而改用幻灯片，演讲者就应该花一点时间解释每一页。最好还可以补上几句不重要的、重复的、甚至多余的话，好让听众有足够时间把幻灯片上的内容记下来。</p>
+<p>我们总会陷入一种幻觉，以为讲座结束以后，听众会找时间认真阅读我们发给他们的幻灯片副本。这只是美好的愿望。</p>
+<h2 id="同一个结果，不妨发表好几次"><a href="#同一个结果，不妨发表好几次" class="headerlink" title="同一个结果，不妨发表好几次"></a>同一个结果，不妨发表好几次</h2><p>拿到学位以后，我有几年时间研究泛函分析。弗雷德里克·里斯（Frederick Riesz）的《论文集》刚出版时，我立刻买了一本。那是一本又大、又厚、又重，而且开本异常巨大的书。</p>
+<p>可我一页页翻下去，很快注意到一件事：书页厚得出奇，几乎像硬纸板；更奇怪的是，里斯的每一篇文章都被重新排成了异常巨大的字号。我一向很喜欢里斯的论文，它们总是写得极其漂亮，读起来给人一种“一锤定音”的感觉。</p>
+<p>但当我继续翻这套《论文集》时，另一幅图景渐渐浮现出来。编辑们显然竭尽全力，把里斯生前发表过的每一张小纸片都搜罗进来了。结果很清楚：里斯真正发表的东西其实并不多。</p>
+<p>更令人惊讶的是，同一篇工作的内容往往会被发表好几次。里斯会先在某本不起眼的匈牙利期刊上发表一个想法的粗糙初稿。几年以后，他会向法国科学院的 <em>Comptes Rendus</em> 提交一系列短札，对同样的材料进一步展开。再过几年，他才会用法语或英语发表最终的定稿。</p>
+<p>曾跟里斯上过课的亚当·科拉尼（Adam Koranyi）告诉我，里斯会一年又一年地讲授同一个主题，一边讲，一边琢磨自己最终要写下来的版本。难怪最后的成稿会那么完美。</p>
+<p>里斯的做法值得效仿。数学共同体实际上被分成许多小群体，每个群体都有自己的习惯、记号和术语。也许很快，把同一个结果写成若干不同版本、分别让不同群体都能读懂，会变成一件不可或缺的事。</p>
+<p>否则，我们付出的代价可能是：某个人用另一套语言和记号重新发现了我们的工作，然后理直气壮地把结果认作自己的。</p>
+<h2 id="真正让人记住你的，往往是你的阐释性工作"><a href="#真正让人记住你的，往往是你的阐释性工作" class="headerlink" title="真正让人记住你的，往往是你的阐释性工作"></a>真正让人记住你的，往往是你的阐释性工作</h2><p>我们来看两个例子，先从希尔伯特说起。</p>
+<p>一提到希尔伯特，我们当然会想到他的几个伟大定理，比如希尔伯特基定理。但是，人们更经常因为他在数论方面的工作、《数论报告》（<em>Zahlbericht</em>）、《几何基础》，以及那本积分方程教材而记住他的名字。</p>
+<p>“希尔伯特空间”这个名称，是斯通（Stone）和冯·诺依曼为了致敬希尔伯特的积分方程教材而提出的。至少在量子力学诞生二十年前，这本教材里就已经首次定义了“谱”这个词。</p>
+<p>希尔伯特的积分方程教材，在很大程度上其实是一部阐释性的著作，建立在赫林格（Hellinger）和其他几位数学家的工作之上，而那些人的名字如今大多已经被遗忘了。</p>
+<p>类似地，让“希尔伯特”这个名字在数学家中家喻户晓的《几何基础》，其中原创性的工作并不多。它更多是收获了许多几何学家的成果，包括 Kohn、Schur（不是你们熟悉的那个 Schur）、Wiener（也不是那个你们熟悉的 Wiener）、Pasch、Pieri，以及其他几位意大利数学家。</p>
+<p>再比如希尔伯特的 <em>Zahlbericht</em>。这部彻底改变数论领域、具有奠基意义的著作，最初其实只是一篇综述，是希尔伯特受委托为《德国数学会通报》撰写的。</p>
+<p>威廉·费勒（William Feller）是另一个例子。今天人们记得费勒，主要因为他写了有史以来最成功的概率论著作。如今很少有概率论学者能说出费勒两篇以上的研究论文；大多数数学家甚至不知道，费勒早年还曾研究过凸几何。</p>
+<p>容我插入一段自己的经历。我偶尔会在哲学的一个分支——现象学——发表论文。第一次在这个领域发表文章以后，我参加“现象学与存在主义哲学学会”的一次会议，会上有人毫不客气、斩钉截铁地告诉我：我那篇论文里写的所有东西，大家早就知道了。这种情形不止发生过一次，最后我不得不重新考虑自己在现象学领域的发表标准。</p>
+<p>碰巧的是，现象学最基础的那些经典著作，往往都用厚重、艰涩、哲学味十足的德语写成。这个传统还要求：无论你在谈什么，都绝不能举例子。</p>
+<p>有一天，我虽然心里非常忐忑，还是决定发表一篇文章。那篇文章本质上只是把埃德蒙·胡塞尔（Edmund Husserl）一本书里的几个段落更新了一下，再加上几个例子而已。</p>
+<p>下一次参加“现象学与存在主义哲学学会”会议时，我已经做好了迎接最坏结果的准备。没想到，一位颇有名望的现象学家面带笑容地朝我冲了过来。他对我的论文赞不绝口，还强烈鼓励我继续发展其中那些“新颖而原创的思想”。</p>
+<h2 id="每个数学家真正拿手的招数都不多"><a href="#每个数学家真正拿手的招数都不多" class="headerlink" title="每个数学家真正拿手的招数都不多"></a>每个数学家真正拿手的招数都不多</h2><p>很久以前，一位年长而知名的数论学家曾对保罗·厄德什（Paul Erdös）的工作说过一些颇为贬低的话。</p>
+<p>你们和我一样，都非常钦佩厄德什对数学的贡献，所以当那位老数学家用一种不容置疑的口气断言，厄德什的全部工作都可以“归结”为几个他在证明里反复使用的小技巧时，我很恼火。</p>
+<p>可这位数论学家没有意识到的是：其他数学家，包括最顶尖的数学家，也都只是依靠少数几个招数，然后一遍又一遍地使用它们。</p>
+<p>看看希尔伯特吧。希尔伯特《论文集》第二卷收录了他关于不变量理论的论文。我特意认真读过其中一些。令人遗憾的是，希尔伯特的一些优美成果如今已经被彻底遗忘了。</p>
+<p>但当我阅读他在不变量理论中那些惊人而深刻的定理证明时，却惊讶地发现：希尔伯特的证明，同样反复依赖那少数几个招数。</p>
+<p>连希尔伯特，也只有那么几招！</p>
+<h2 id="别太担心自己犯的错误"><a href="#别太担心自己犯的错误" class="headerlink" title="别太担心自己犯的错误"></a>别太担心自己犯的错误</h2><p>还是先从希尔伯特讲起。</p>
+<p>德国人准备出版希尔伯特的《论文集》，打算在他晚年的某个生日把整套书送给他时，突然发现他们不能直接把论文按原样重印，因为那些文章里充满了错误，其中一些还相当严重。</p>
+<p>于是，他们雇了一位当时失业的年轻数学家奥尔加·陶斯基-托德（Olga Taussky-Todd），让她逐篇检查希尔伯特的论文，把所有错误纠正过来。</p>
+<p>奥尔加为此干了整整三年。最后发现，几乎所有错误都能修正，而且不需要对定理的陈述作任何重大改动。</p>
+<p>只有一个例外：希尔伯特晚年写过一篇论文，怎么也救不回来。那是一篇声称证明了连续统假设的文章，你们可以在 20 世纪 30 年代初的 <em>Mathematische Annalen</em> 中找到它。</p>
+<p>终于到了希尔伯特生日那天，一套刚刚印好的《希尔伯特论文集》被送到了这位“枢密顾问”（Geheimrat）面前。希尔伯特仔细翻了翻，却什么异样也没发现。</p>
+<p>现在让我们把视线移到另一个极端。容我再讲一个自己的故事。</p>
+<p>1979 年夏天，我在匹兹堡参加一次哲学会议时，突然发生视网膜脱离。幸亏乔尼（Joni）及时出手帮忙，我才赶在最后关头接受手术，保住了视力。</p>
+<p>手术后的第二天早晨，我双眼缠着绷带躺在病床上，乔尼来看我。既然我至少还得在匹兹堡的医院里住一个星期，我们俩便决定干脆写篇论文。</p>
+<p>乔尼从我的行李箱里翻出一份手稿。我告诉她，里面有几个错误，她可以帮我一起改掉。</p>
+<p>接下来是二十分钟的沉默，她一页页读着草稿。</p>
+<p>“天哪，这全都是错的！”她最后用年轻而清亮的声音说道。</p>
+<p>她是对的。手稿里的每一句话都有问题。可尽管如此，她忙了一阵以后，居然把所有错误都改好了，最后这篇论文也顺利发表了。</p>
+<p>错误有两种。一种是致命错误，它会摧毁整个理论；另一种只是偶然性的错误，而这种错误反倒很有用，因为它能帮助我们检验一个理论到底有多稳定。</p>
+<h2 id="使用费曼方法"><a href="#使用费曼方法" class="headerlink" title="使用费曼方法"></a>使用费曼方法</h2><p>理查德·费曼（Richard Feynman）很喜欢用下面这套办法解释“怎样成为一个天才”。</p>
+<p>你应该始终在脑子里保留大约十二个自己最喜欢的问题。大多数时候，它们都处在休眠状态。</p>
+<p>每当你听到或读到一个新的技巧、一个新的结果，就把它拿去和这十二个问题逐一碰一碰，看看它能不能帮上忙。</p>
+<p>偶尔，总会有一次真的撞上。于是别人就会说：“他到底是怎么想到的？这人一定是个天才！”</p>
+<h2 id="致谢要大方"><a href="#致谢要大方" class="headerlink" title="致谢要大方"></a>致谢要大方</h2><p>我读论文时，如果觉得作者没有给我应有的认可，总会有些恼火。可以有把握地猜测，其他人多半也一样。</p>
+<p>有一天，我决定做个实验。写完一篇相当长的论文以后，我开始认真整理一份详尽的参考文献。忽然心血来潮，我故意引用了几篇和我的论文内容完全没有关系的文章，想看看会发生什么。</p>
+<p>有点出乎意料的是，我收到了其中两位作者的来信，而我原本认定他们的论文和我的文章毫不相干。</p>
+<p>两封信的情绪都非常强烈。两位作者都热情地祝贺我，因为我是第一个承认他们“对这个领域作出贡献”的人。</p>
+<h2 id="把引言写得有信息量"><a href="#把引言写得有信息量" class="headerlink" title="把引言写得有信息量"></a>把引言写得有信息量</h2><p>如今，从头到尾完整读完一篇数学论文，已经是一件很少见的事了。</p>
+<p>如果我们真希望别人读自己的论文，那就最好给潜在读者一个足够强的理由，让他们愿意读下去。一篇篇幅较长的引言，可以回顾这个主题的历史，把该给的功劳都给到位，再用比较从容、叙述性的方式，诱人地勾勒一下论文的内容。这样做，至少多少能替我们争取到那么一两个读者。</p>
+<p>我担任 <em>Advances in Mathematics</em> 编辑时，经常把投稿退回给作者，建议他们把引言写得再长一点。</p>
+<p>有时候，我很快就会收到作者的回信，说同一篇论文此前刚刚被 <em>Annals of Mathematics</em> 拒掉，理由恰恰是：引言已经太长了。</p>
+<h2 id="为老去做好准备"><a href="#为老去做好准备" class="headerlink" title="为老去做好准备"></a>为老去做好准备</h2><p>我已故的朋友斯坦·乌拉姆（Stan Ulam）过去常说，他的一生被非常鲜明地分成了两半。</p>
+<p>前半生，他永远是人群里最年轻的那个；后半生，他永远是最年长的那个。中间根本没有过渡期。</p>
+<p>现在我终于明白，他说得有多对。</p>
+<p>关于老年的礼仪，似乎从来没有人把它写下来，所以我们只能用最笨、也最痛的方式自己学会。要适应老年，首先得接受一个最基本的事实，而接受它需要时间。</p>
+<p>你必须明白，到了某个年纪以后，别人就不再把你看成一个普通的“人”了。你会变成一个“机构”，别人也会像对待一所机构那样对待你。</p>
+<p>人们期待你的举止像一件有年代的古董家具、一处建筑地标，或者一本早期印本的古籍。</p>
+<p>这时候，你还发不发表论文，其实已经没那么重要了。</p>
+<p>如果你的论文写得不好，人们会说：“还能指望什么？他早就是个固定摆设了！”</p>
+<p>如果你偶尔又写出一篇颇有意思的论文，人们则会说：“还能指望什么？他一辈子都在研究这个！”</p>
+<p>唯一明智的回应，就是好好享受这个新角色——享受自己已经成为一个“机构”这件事。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2026/08/12/%E5%8F%96%E6%B3%95%E5%8A%A1%E4%B8%8A%EF%BC%8C%E4%BB%85%E5%BE%97%E4%B9%8E%E4%B8%AD%EF%BC%88%E5%8D%8E%E7%BD%97%E5%BA%9A%EF%BC%89/" rel="prev" title="取法务上，仅得乎中（华罗庚）">
+                  <i class="fa fa-angle-left"></i> 取法务上，仅得乎中（华罗庚）
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">LCS</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>站点总字数：</span>
+    <span title="站点总字数">52k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">3:09</span>
+  </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/ai-lcs" class="github-corner" title="在 GitHub 上关注我" aria-label="在 GitHub 上关注我" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+<div id="welcome-overlay">
+  <div class="welcome-content">
+    <div class="welcome-top">👋 欢迎你来到</div>
+    <h1 class="welcome-title">LCS 的数学与人工智能世界</h1>
+    <p class="welcome-subtitle">探索数学之美，拥抱 AI 未来</p>
+    <button id="enter-blog-btn">进入博客 →</button>
+  </div>
+</div>
+
+<button id="random-post-btn" type="button" aria-label="随机阅读一篇文章" title="随机文章">
+  <i class="fa fa-shuffle" aria-hidden="true"></i>
+</button>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const overlay = document.getElementById('welcome-overlay');
+  const isHomePage = window.location.pathname === '/' || window.location.pathname === '/index.html' || window.location.pathname === '';
+  const hasSeenWelcome = sessionStorage.getItem('hasSeenWelcome');
+
+  // 如果不是首页，或者已经在本次会话中看过欢迎页，则直接移除
+  if (!isHomePage || hasSeenWelcome) {
+    if (overlay) overlay.remove();
+  } else {
+    // 显示逻辑（点击进入博客后记录状态）
+    const btn = document.getElementById('enter-blog-btn');
+    if (overlay && btn) {
+      btn.onclick = function() {
+        overlay.style.opacity = '0';
+        sessionStorage.setItem('hasSeenWelcome', 'true'); // 记录状态
+        setTimeout(function() {
+          overlay.remove();
+        }, 800);
+      };
+    }
+  }
+
+  // 侧边栏北京时间
+  const clock = document.getElementById('sidebar-clock');
+  if (clock) {
+    const formatter = new Intl.DateTimeFormat('en-GB', {
+      timeZone: 'Asia/Shanghai',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: false
+    });
+    const updateClock = function() {
+      clock.textContent = formatter.format(new Date());
+    };
+    updateClock();
+    setInterval(updateClock, 1000);
+  }
+
+  // 复用页脚已有的站点总字数统计
+  const sidebarWordCount = document.getElementById('sidebar-word-count');
+  const footerWordCount = document.querySelector('.footer-inner [title="站点总字数"]');
+  if (sidebarWordCount && footerWordCount) {
+    sidebarWordCount.textContent = footerWordCount.textContent.trim().toUpperCase();
+  }
+
+  // Ctrl/Cmd + K 打开现有站内搜索
+  const searchTrigger = document.querySelector('.menu-item-search .popup-trigger') || document.querySelector('.popup-trigger');
+  if (searchTrigger) {
+    const shortcut = document.createElement('kbd');
+    shortcut.className = 'search-shortcut-key';
+    shortcut.textContent = /Mac|iPhone|iPad/.test(navigator.platform) ? '⌘ K' : 'Ctrl K';
+    searchTrigger.appendChild(shortcut);
+
+    document.addEventListener('keydown', function(event) {
+      if ((event.ctrlKey || event.metaKey) && !event.altKey && event.key.toLowerCase() === 'k') {
+        event.preventDefault();
+        searchTrigger.click();
+      }
+    });
+  }
+
+  // 随机文章
+  const randomButton = document.getElementById('random-post-btn');
+  if (randomButton) {
+    randomButton.addEventListener('click', async function() {
+      randomButton.disabled = true;
+      randomButton.classList.add('is-loading');
+      randomButton.setAttribute('aria-busy', 'true');
+
+      try {
+        const response = await fetch('/search.json');
+        if (!response.ok) throw new Error('Search index unavailable');
+        const posts = await response.json();
+        const currentPath = window.location.pathname;
+        const candidates = posts.filter(function(post) {
+          return post.url && post.url !== currentPath;
+        });
+        if (!candidates.length) throw new Error('No article available');
+
+        const selected = candidates[Math.floor(Math.random() * candidates.length)];
+        window.location.href = selected.url;
+      } catch (error) {
+        randomButton.classList.remove('is-loading');
+        randomButton.classList.add('has-error');
+        randomButton.disabled = false;
+        randomButton.removeAttribute('aria-busy');
+        randomButton.title = '暂时无法读取文章列表';
+        setTimeout(function() {
+          randomButton.classList.remove('has-error');
+          randomButton.title = '随机文章';
+        }, 2000);
+      }
+    });
+  }
+});
+</script>
+
+</body>
+</html>
