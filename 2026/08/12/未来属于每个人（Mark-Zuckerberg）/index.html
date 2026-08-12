@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.2">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/lcs-apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/lcs-favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/lcs-favicon-16.png">
+  <link rel="mask-icon" href="/images/lcs-favicon.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/#6c5ce7/pace-theme-minimal.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous" defer></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"ai-lcs.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.28.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":true,"color":"#6c5ce7","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="我们有幸生活在历史上一段不可思议的时刻。在未来几年里，人们将能够运用超越人类能力的超级智能，去创造和发现非凡的新事物，创办新企业，表达新思想，学习新概念，并改善我们的健康与生活质量。随着我们日益接近这一时刻，有必要建立一套哲学，思考如何最好地运用超级智能，确保它改善我们所有人的生活、工作、社区、自由与安全。 我们这个时代最具定义性的问题是：谁能获得超级智能，我们又该把它引向何方？它是被集中起来、局">
+<meta property="og:type" content="article">
+<meta property="og:title" content="未来属于每个人（Mark Zuckerberg）">
+<meta property="og:url" content="https://ai-lcs.github.io/2026/08/12/%E6%9C%AA%E6%9D%A5%E5%B1%9E%E4%BA%8E%E6%AF%8F%E4%B8%AA%E4%BA%BA%EF%BC%88Mark-Zuckerberg%EF%BC%89/index.html">
+<meta property="og:site_name" content="LCS 的数学与 AI 世界">
+<meta property="og:description" content="我们有幸生活在历史上一段不可思议的时刻。在未来几年里，人们将能够运用超越人类能力的超级智能，去创造和发现非凡的新事物，创办新企业，表达新思想，学习新概念，并改善我们的健康与生活质量。随着我们日益接近这一时刻，有必要建立一套哲学，思考如何最好地运用超级智能，确保它改善我们所有人的生活、工作、社区、自由与安全。 我们这个时代最具定义性的问题是：谁能获得超级智能，我们又该把它引向何方？它是被集中起来、局">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-08-12T11:53:03.000Z">
+<meta property="article:modified_time" content="2026-08-12T12:07:18.624Z">
+<meta property="article:author" content="LCS">
+<meta property="article:tag" content="人工智能">
+<meta property="article:tag" content="数学">
+<meta property="article:tag" content="深度学习">
+<meta property="article:tag" content="编程">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://ai-lcs.github.io/2026/08/12/%E6%9C%AA%E6%9D%A5%E5%B1%9E%E4%BA%8E%E6%AF%8F%E4%B8%AA%E4%BA%BA%EF%BC%88Mark-Zuckerberg%EF%BC%89/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://ai-lcs.github.io/2026/08/12/%E6%9C%AA%E6%9D%A5%E5%B1%9E%E4%BA%8E%E6%AF%8F%E4%B8%AA%E4%BA%BA%EF%BC%88Mark-Zuckerberg%EF%BC%89/","path":"2026/08/12/未来属于每个人（Mark-Zuckerberg）/","title":"未来属于每个人（Mark Zuckerberg）"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>未来属于每个人（Mark Zuckerberg） | LCS 的数学与 AI 世界</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.1.0/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script><script src="/js/bookmark.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+  <script src="/js/third-party/pace.js" defer></script>
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js" defer></script>
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">LCS 的数学与 AI 世界</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Mathematics & Artificial Intelligence</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%B1%E4%B8%9A%E5%A2%9E%E9%95%BF%E4%B8%8E%E7%BB%8F%E6%B5%8E"><span class="nav-number">1.</span> <span class="nav-text">就业增长与经济</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8E%E7%A4%BE%E5%8C%BA%E5%85%B1%E5%BB%BA%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD"><span class="nav-number">2.</span> <span class="nav-text">与社区共建人工智能基础设施</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%98%B2%E8%8C%83%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%9C%A8%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E3%80%81%E7%94%9F%E7%89%A9%E6%81%90%E6%80%96%E4%B8%BB%E4%B9%89%E7%AD%89%E9%A2%86%E5%9F%9F%E7%9A%84%E6%BB%A5%E7%94%A8"><span class="nav-number">3.</span> <span class="nav-text">防范人工智能在网络安全、生物恐怖主义等领域的滥用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%9D%E6%8A%A4%E8%87%AA%E7%94%B1%EF%BC%8C%E9%98%B2%E8%8C%83%E6%94%BF%E5%BA%9C%E6%9A%B4%E6%94%BF"><span class="nav-number">4.</span> <span class="nav-text">保护自由，防范政府暴政</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A1%AE%E4%BF%9D%E7%BE%8E%E5%9B%BD%E4%BF%9D%E6%8C%81%E9%A2%86%E5%85%88"><span class="nav-number">5.</span> <span class="nav-text">确保美国保持领先</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8E%E4%BA%BA%E7%B1%BB%E5%AF%B9%E9%BD%90%EF%BC%8C%E5%BA%94%E5%AF%B9%E7%94%9F%E5%AD%98%E9%A3%8E%E9%99%A9"><span class="nav-number">6.</span> <span class="nav-text">与人类对齐，应对生存风险</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%9D%E6%8C%81%E5%AF%B9%E8%B6%85%E7%BA%A7%E6%99%BA%E8%83%BD%E7%9A%84%E6%8E%A7%E5%88%B6"><span class="nav-number">7.</span> <span class="nav-text">保持对超级智能的控制</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="LCS"
+      src="https://github.com/ai-lcs.png">
+  <p class="site-author-name" itemprop="name">LCS</p>
+  <div class="site-description" itemprop="description">探索数学与人工智能的无限可能</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">28</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+  </div>
+<div id="sidebar-poem">
+  <div class="poem-line">雄关漫道真如铁，</div>
+  <div class="poem-line">而今迈步从头越。</div>
+</div>
+
+<div id="sidebar-status" aria-label="博客运行状态">
+  <div class="status-line status-online">
+    <span class="status-dot" aria-hidden="true"></span>
+    <span>SYSTEM ONLINE</span>
+  </div>
+  <div class="status-line status-clock">
+    <span>CST</span>
+    <time id="sidebar-clock">--:--:--</time>
+  </div>
+  <div class="status-line status-words">
+    <span id="sidebar-word-count">--</span>
+    <span>WORDS</span>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://ai-lcs.github.io/2026/08/12/%E6%9C%AA%E6%9D%A5%E5%B1%9E%E4%BA%8E%E6%AF%8F%E4%B8%AA%E4%BA%BA%EF%BC%88Mark-Zuckerberg%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://github.com/ai-lcs.png">
+      <meta itemprop="name" content="LCS">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LCS 的数学与 AI 世界">
+      <meta itemprop="description" content="探索数学与人工智能的无限可能">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="未来属于每个人（Mark Zuckerberg） | LCS 的数学与 AI 世界">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          未来属于每个人（Mark Zuckerberg）
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2026-08-12 19:53:03 / 修改时间：20:07:18" itemprop="dateCreated datePublished" datetime="2026-08-12T19:53:03+08:00">2026-08-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%98%85%E8%AF%BB/" itemprop="url" rel="index"><span itemprop="name">阅读</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>11k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>41 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>我们有幸生活在历史上一段不可思议的时刻。在未来几年里，人们将能够运用超越人类能力的超级智能，去创造和发现非凡的新事物，创办新企业，表达新思想，学习新概念，并改善我们的健康与生活质量。随着我们日益接近这一时刻，有必要建立一套哲学，思考如何最好地运用超级智能，确保它改善我们所有人的生活、工作、社区、自由与安全。</p>
+<p>我们这个时代最具定义性的问题是：谁能获得超级智能，我们又该把它引向何方？它是被集中起来、局限于少数机构之手，还是成为一种赋能每一个人的工具？</p>
+<span id="more"></span>
+
+<p>我们提出一套以个人赋权为繁荣之源、以发明创造为超级智能的首要目的、以权力制衡为安全之基的哲学。</p>
+<p>一切新技术都会带来机遇与挑战。超级智能将成为历史上最重要的技术之一，因此它的机遇与挑战很可能比我们一生中见过的任何技术都更为巨大。我们应当极其严肃地对待这一点。</p>
+<p>尽管如此，令人惊讶的是，许多从事人工智能开发的人的话语竟充满了末日论调。我不理解，为什么任何相信人工智能将消灭大多数工作岗位、并使人性的意义大打折扣的人，会急于去建造那样的未来。那种认为人工智能危险到唯有极度集权才是安全之路的观点，本身就问题重重。纵观历史，指望一个足够开明的绝对权力会仁慈地为人类谋福祉，从未带来过安全或积极的结果。</p>
+<p>人类见证过许多变革性的进步。每一次，都有人担心人们会被抛下。但每一次，人类最终都以更多人共享更大的繁荣、健康与自由而告终。我们相信人工智能时代同样如此，未来的富足可以为所有人共享。我们也相信，那些引领我们走到今天的价值观——如自由、开放探究、自由企业与机会平等——同样是建设积极未来的正确价值观。</p>
+<p>把权力交到人们手中去追求各自的理想，正是人类取得最大进步的方式。新颖的想法与重大的突破很少仅仅出自既有机构。它们来自自行车铺里坚信人类能够飞上天空的兄弟，来自没有受过任何学校教育的装订工学徒却摸索出如何发电，来自车库里觉得个人电脑应当属于每个人的少年。我们相信这一点将继续成立。当每个人获得更强大的工具时，每个人塑造未来的能力只会更强，而不是更弱。</p>
+<p>发明创造，而非自动化，将是超级智能最伟大的贡献。早期的人工智能能够回答问题、处理常规工作。很快，它将越来越多地帮助我们发现新知识——从发现治愈家人疾病的新药，到寻找改善业务的新方法。一个人一天内能提出的问题数量是有限的，而超级智能为实现你的目标所能发明出的有价值之物，却是无限的。</p>
+<p>当智能变得充裕，最重要的问题将是我们如何引导它。有人主张，应当由超级智能本身，或掌控它的少数专家，来决定什么对人类最有利。我们不同意。民主与经济学史早已证明，对于人们如何定义最好的生活，并不存在单一的客观答案；因此，最好的方式就是让每个人自行决定自己生活中何为重要。</p>
+<p>我们相信，将超级智能交付给每一个人，正是回答这一问题的途径。这延续了把超级计算机与互联网装进每个人口袋与书桌的传统。与其将超级智能集中起来，我们应当将其广泛分发，赋予每一个人引导它的能力。这有望开启一个个人赋权的新时代——个人能够借助这一强大的新能力，充分发挥潜能、追求自身志趣，并比以往任何时候都更好地改善自己的生活与世界。</p>
+<p>为了让这一点更加具体，以下是Meta正在建设的个人超级智能，用以改善我们所有人的生活的一些具体方向：</p>
+<ul>
+<li><p>每个人都将拥有一个极其能干的个人代理，它了解你、你的目标以及你在乎的一切。你的代理将每周7天、每天24小时为你工作，改善你的人际关系、健康、事业、财务、家庭管理和兴趣爱好等方方面面。它将为你腾出时间去做你喜欢的事，并帮助你完成原本无法完成的更多事。它将配备强大的隐私与安全选项，让你可以放心地把所有个人内容交给它处理，并确信没有其他人能够访问你的信息——这与WhatsApp的加密方式类似。你可以通过任何设备与你的代理交互，包括你的眼镜，以便在你关心的人面前保持当下的在场。</p>
+</li>
+<li><p>例如，我的代理会为我标记有趣的信息，并帮助我构思想法原型。它通过监测我的睡眠、随后观察我的训练并给出反馈，帮助我保持健康。我女儿酷爱烘焙，因此我的代理会为我们计划每周末一起制作的个性化食谱、订购食材，并在烘焙过程中给出建议。</p>
+</li>
+<li><p>每个人都将拥有不可思议的创作工具来表达你的想法。我8岁的女儿已经能在一个晚上用代码实现她的想法并制作出视频——这在过去要么需要我花上几个月，要么根本不可能完成。现在我们正在一起设计一个机器人。与此同时，Meta的研究人员正在生成理想的晶体新结构，用于增强现实眼镜，工程师们正在以过去难以想象的速度创建新应用。很快，每个人都将在发明上拥有超能力。</p>
+</li>
+<li><p>每个人都将拥有强大的工具来创办新企业，经济也将变得更加充满创业精神。人们开始能够不靠融资、不组大团队，就亲手实现自己的想法。许多过去尝试起来太难或太贵的想法，如今都将成为可能。这意味着我们将看到更多的想法与企业。我预测，这不仅会带来大得多的经济增长，长远来看还会带来更多的就业，而非更少。</p>
+</li>
+<li><p>每个人都将拥有一位在每一个学科都具备博士水平的个性化导师与教练，以及无限的耐心，帮助你学习任何想学的东西。学生将在需要的领域获得额外的帮助——而这些帮助目前只有父母付得起钱的人才能得到。成年人将拥有一个超级智能的学习助手，它深知如何教你新的职业技能、新的语言、新的爱好，或任何你感兴趣的事物。</p>
+</li>
+<li><p>每个人都将从科学进步中受益，并能够为科学进步作出贡献。例如，Biohub已经发布了与虚拟细胞和蛋白质相关的开源生物模型，正在帮助科学家做出新发现、设计新药。当年普莉希拉和我开始这项工作时的目标，是帮助科学家在本世纪治愈或预防所有疾病；如今，随着人工智能的进步，我们预计这一目标将能更快实现。</p>
+</li>
+<li><p>由于健康问题存在长长的尾部，且每个人的生物学特征各不相同，人们的直接参与将有助于解锁个性化疗法，并加快试验以匹配发明的节奏，使产业能够超越对常见疾病的过度聚焦。</p>
+</li>
+<li><p>在生物学之外，人工智能还将帮助人们推进每一个领域的研究——运用科学方法，花费数周或数月去检验和完善假设。科学发现很可能成为对社会最有价值的发明形式之一。</p>
+</li>
+<li><p>每个人都将免费或负担得起地获得这些工具。要让每个人都能参与未来，每个人都必须有能力运用超级智能改善自己的生活、塑造这个世界。我们将提供免费版本，让数十亿人都能使用。对于希望付费使用更多算力的人，将有一个动态拍卖机制，既保证每个人为其所用的智能与算力支付尽可能最低的价格，又确保算力被用于人们集体认为最有价值的用途。这将确保超级智能的福祉被广泛分享。</p>
+</li>
+</ul>
+<p>以上是Meta聚焦的一些主要努力。每一个领域都在推进个人赋权的价值观，并共同指向一个未来——在那里，每个人在塑造世界方面所扮演的角色都比今天更为重要。如果这些努力取得成功，未来将带来丰富的个人自主、思想的表达、人际关系的加深、经济与财务的繁荣、健康的改善，以及我们今天无法想象的种种发明。但最重要的是，未来将由我们所有人共同创造，并映照出我们所有人的价值观与视角。</p>
+<p>与此同时，新技术也带来新的风险。我们正着力应对许多重要的担忧——从对就业流失的担忧、确保当地社区从数据中心建设中获益，到人工智能被滥用于网络安全和生物风险相关的安全隐患，再到避免政府暴政与监控、确保美国与民主国家保持领先，以及最终确保人类牢牢掌控超级智能，使其服务于我们而非危害我们。</p>
+<p>传统观点认为，这些担忧关乎技术本身，只要花足够的时间，我们就能完善或对齐技术，从而造出一个仁慈的超级智能。我认为这种关于对齐的看法从根本上是错误的。</p>
+<p>人类并非单一文化。人们多元的价值观，代表着他们在重大问题上愿意做出的不同取舍。不存在一种技术解决方案能够同时对齐所有人彼此冲突的利益与价值观。任何一个单一的超级智能，都不得不让某些价值观优先于另一些，在此过程中它就不可能对每一个人都仁慈。</p>
+<p>相反，我们提议，将这些担忧逐一置于「实现恰当权力制衡」的透镜下审视，正如西方社会在民主治理机构中所做的那样。利益相互竞争的个人与机构，会自然地相互制衡，从而导向积极的结果。建设积极人工智能未来最切实可行的路径，就是把超级智能交付给每一个人。</p>
+<p>不妨做个思想实验：设想只有一个人拥有一名超级智能律师。即便他在案情实质上理亏，他在法庭上也将占据不公平的优势。那将导致一个更糟糕的社会。但再设想人人都拥有超级智能律师。在这种情况下，司法将比今天公平和高效得多——今天的诉讼中，常常存在技能与资源上的不对等。</p>
+<p>同理，如果只有一个人掌握网络安全超级智能，他很可能攻破几乎任何技术系统，世界将比今天更加不安全。但如果人人都能获得网络安全超级智能，那么我们所有的技术系统都将比今天更加安全——因为被广泛部署的超级智能将帮助加固和更新每一个系统。</p>
+<p>如果只有一家企业拥有超级智能，这家企业将击败所有其他企业，导致市场比今天更缺乏活力、繁荣更不普惠。但如果人人都能获得超级智能，那么人人都将拥有工具，去创造今天不可能的新事物，经济将更有活力，并产生更广泛的繁荣。</p>
+<p>当人们被赋权，他们自然会竞争，并在经济、社会、政治以及人类互动的所有其他层面相互制衡。人们同样制衡着包括企业与政府在内的机构的权力。</p>
+<p>但是，如果超级智能的权力掌握在少数个人、企业、政府或人工智能自身手中，那么结果自然会对其他所有人不利。这不是一条技术原则，而是关乎权力制衡。根本不存在什么单一的仁慈超级智能。</p>
+<p>因此，为所有人开创积极未来的关键，是实现一种偏向于个人的权力制衡。解决方案，就是确保超级智能被广泛分发，以赋能每一个人。</p>
+<p>Meta是主要专注于为每一个人构建个人超级智能的公司。大多数其他实验室专注于为企业、政府或其他机构构建人工智能，因此如果这些实验室领先，权力制衡将偏向更大的机构而非个人。Meta自创立以来的使命，就聚焦于把权力交到人们手中。如果我们的信念与原则得以引领，那么权力制衡将偏向个人，也偏向每一个人更美好的未来。</p>
+<p>下面，让我们逐一更详细地考察上述各项风险。</p>
+<h2 id="就业增长与经济"><a href="#就业增长与经济" class="headerlink" title="就业增长与经济"></a>就业增长与经济</h2><p>人们对新体验有着无限的需求，也总能找到新的问题去攻克。经济中存在着一种自然的平衡：一边是企业通过自动化更高效地满足人们的需求，另一边是个人习得新技能去服务更高级的需求。当这种平衡健康存在时，整体生产率与创新都会提升，而就业水平保持在高位。</p>
+<p>人们担心自动化会超过个人能力增长的步伐，导致就业流失，随后是人们学习新工作所必经的艰难时期。但并没有哪条法则规定，人工智能在提升自动化方面必须快于它提升个人能力或对新技能需求的速度。近期的统计数据表明，更可能出现的情形是：个人能力的增长与自动化持平甚至超过它——在这种情况下，人们将在现有工作改变之前，就获得做许多新事情的能力。这将带来健康的平衡，甚至可能带来就业增长。</p>
+<p>我们最终得到哪种结果，取决于自动化与个人赋权、发明创造这两端进展之间的平衡。如果专注于自动化知识工作的实验室领先，那么我预计人们和经济将经历困难得多的转型。但如果人人都能获得扩展自身能力的个人超级智能，平衡就会被推向赋能个人、推向积极的未来。</p>
+<p>有几个理由让我们有理由相信，未来将存在充裕的就业机会。无论人工智能变得多么智能，算力始终是有限的，因此如何使用算力总有机会成本。如果人们能够运用人工智能发明出价值连城的新事物，那么把算力配置到发明创造上，将比用于自动化现有工作更有意义。超级智能越是作为发明的工具发挥作用，个人能力就越有可能超越自动化，未来对人类也就越美好。</p>
+<p>人们也在不断想出新的点子，让生活变得更美好，并创造新的工作将这些点子变为现实。一代人之前，还没有应用程序开发者、社交媒体创作者、电动车技术员和数据中心运营者。在不久的将来，将会出现今天尚不常见的新职业，例如设计定制玩具、家具或服装的一人产品工作室；打造游戏、故事与冒险的世界构建师和体验设计师；运用超级智能制定个性化治疗方案的个人生物学家；以及更多我们尚无法设想的工作。</p>
+<p>在许多方面，这都是历史趋势的延续。工业革命之前，90%的人都是为生存而耕作的农民。技术的进步稳步地将人类中的大部分解放出来，使其不必再专注于谋生，而可以更多地投入我们自主选择的事业。每前进一步，人们都用新获得的生产力，去实现此前不可能达成的成就，同时把更多时间用于创造、文化、人际关系与享受生活。</p>
+<p>当然，我们工作方式的某些方面会改变——正如计算机、互联网和任何新技术出现时那样。这意味着人们必须去适应，而这将是充满挑战的。但每个人拥有的个人代理越擅长以超级智能的水平教导我们新技能、帮助我们适应变化，这一过程就会越平顺。</p>
+<p>公司规模可能会缩小——正如从工业巨头向科技公司转型时发生的那样。但这并不意味着整体就业减少。它意味着公司的数量更多，而每家公司的员工更少。值得建设的有价值企业与服务，比今天人们所能建设的要多得多。我预计我们将开始看到，少数几个人凭借个人超级智能代理，就能以相当可观的规模运营公司。未来，小企业将继续是经济的支柱，但每家小企业都将能够产生大得多的影响力。</p>
+<h2 id="与社区共建人工智能基础设施"><a href="#与社区共建人工智能基础设施" class="headerlink" title="与社区共建人工智能基础设施"></a>与社区共建人工智能基础设施</h2><p>可持续的基础设施发展，意味着社区必须从每一个项目中显著受益。这包括高薪的本地就业岗位、对学校和公共服务的投资、确保能源价格不上涨，以及对环境的呵护。随着税收的增长，教师、执法人员、消防部门等也会从中受益。我们把这些本地收益称为「社区契约」，并且正在启动一项「未来属于每个人」基金，直接支持我们开展工作的每一个社区。</p>
+<p>例如，在路易斯安那州里奇兰堂区，Meta正在建设一座大型数据中心，由于我们投资带来的税收增长，当地教师今年获得了5万美元的奖金。学区总监告诉我们，教师们如今正从全国各地迁来这里，他相信这里将跻身全美最好的学区之列。</p>
+<p>与知识工作流失的担忧不同，熟练技工——如木匠、电工和建筑工人——目前处于短缺状态，无法满足基础设施建设的需求。Meta创办了「美国劳动力学院」，为熟练技工提供免费培训，并保证在我们建设数据中心的地区获得高薪工作。</p>
+<p>我们通过自建发电基础设施，帮助维持低廉的电价。这确保我们不仅不会消耗本可供应给当地社区的能源，而且在某些情况下，还会将低成本的多余能源回馈给社区。我们认为，这是实现可持续性的重要投资原则。</p>
+<p>我们的数据中心也被设计为全球节水效率最高的设施之一。我们致力于实现「水正效益」——也就是说，到2030年，在我们运营所在的流域，我们恢复的水量将超过我们的用水量。在高度缺水的地区，我们的目标是将我们使用的水量恢复到200%。</p>
+<p>我们看到，我们长期投资的社区，比那些投机者几乎不投资社区就开工建设的地方，对开发的支持度更高。历史上，那些引入了铁路、高速公路、电气化和宽带的小镇与城市，成为了研究、商业与工业的中心，人口与经济增长随之而来。我们相信，只要以强有力的社区契约为依托，建设持久资产，并为下一代在这里成长、建设生活提供理由，人工智能基础设施也能发挥类似的作用。</p>
+<p>开发还涉及国家利益与国家安全的层面。如果美国及其盟友在人工智能方面领先于地缘政治对手，美国社区将享有更大的繁荣与安全。然而，与中国等国家相比，美国的一个显著劣势是：在这里建设基础设施更加困难。因此，找出实现全国可持续开发所需的社区契约，将使所有人共同受益。</p>
+<h2 id="防范人工智能在网络安全、生物恐怖主义等领域的滥用"><a href="#防范人工智能在网络安全、生物恐怖主义等领域的滥用" class="headerlink" title="防范人工智能在网络安全、生物恐怖主义等领域的滥用"></a>防范人工智能在网络安全、生物恐怖主义等领域的滥用</h2><p>在自由社会中，人们将拥有既能行善也能作恶的工具，但执法部门和军队拥有更多的武器与情报搜集能力。在人工智能时代，防御者也同样拥有更多的算力，能够从相同的模型中产出多得多的情报——在某些情况下，他们还拥有更先进的模型。</p>
+<p>防范网络安全、生物恐怖主义及其他威胁的策略各不相同，但总体模式是：社会必须确保那些制衡作恶者的防御力量，始终拥有更大的权力与资源优势。</p>
+<p>有人认为，降低风险的最好办法是限制个人能够获得的能力。但赋予人们网络安全能力，正是我们保护系统长尾的方式；赋予人们科学能力，正是我们推进科学、从而在长期降低伤害风险的方式。限制能力会把我们引向集中化与缺乏制衡的道路，因此我们必须对此格外审慎——尤其是在其他国家选择限制更少的路径之时。</p>
+<p>在网络安全方面，被广泛部署的开源系统已被证明更加安全，因为更多的人能够发现漏洞、加固系统，并轻松升级到最新、最安全的版本。就在最近几周，我们看到处理安全事件的公司（如Hugging Face）依靠广泛可用的开放模型来修补漏洞。随着时间推移，我预计广泛部署的、具备强大网络安全能力的人工智能模型，将带来更加安全而非更不安全的系统。一旦超级智能使世界上绝大部分代码能够被验证为安全，这一点将彻底成立。长期的答案不是扣住能力不放，而是建立一种超级智能被广泛分发的权力制衡。</p>
+<p>就近期而言，加快关键系统的加固进程非常重要。我提议，开发前沿人工智能的公司应当投入可观的技术资源，帮助政府加固关键基础设施。我还提议，前沿人工智能实验室应当共享新模型的中间训练检查点供政府使用与审查，而不是等到训练全部完成。这样一来，政府将能及早获得最强大的模型，并拥有一支能干工程师组成的大军来识别和修补安全问题。实验室还应与执法部门合作，帮助识别试图滥用其系统的作恶者。这些步骤将加速安全部署，同时既不会拖慢模型创新的步伐，也不会实质性地推迟个人接触这项技术。</p>
+<p>在生物与化学风险方面，令人担忧的是：使科学家能够设计新药的能力，同样可能使作恶者设计出有害化合物。这就把问题框定为一种取舍——一边是推进科学、治愈癌症和其他疾病的巨大收益，另一边是潜在新问题的风险。但理想情况下，我们应当在减轻风险的同时加速科学进步。</p>
+<p>我认为，对待这一风险应当抱有更多的谦逊，因为几乎没有历史先例可以说明它发生的可能性是大是小。几十年来，作恶者一直有可能合成有害化合物，但这很少成为重大问题——也许是因为网络攻击所存在的经济动机在这里并不那么明显。话虽如此，一旦我们开始看到有害案例出现，就应当调整策略，以适当减轻风险。</p>
+<p>实验室应当继续努力降低我们模型中的生物与化学风险。与此同时，我认为政府应在多个领域更新政策。首先，我们应当聚焦于限制有害物质的物理生产与流通。我预计，监管和控制物理组件要比限制知识的传播更容易，因此这是一个重要的政策着力点。其次，我们应当加快社会开发新疗法、针对新问题提供免疫防护的能力。这包括简化FDA等监管机构测试和批准新疗法的方式。随着人工智能加快药物发现的步伐，无论如何我们都需要更新这些流程，以跟上创新的节奏。</p>
+<p>从长远来看，应对新科学发现所带来风险的答案，是加速科学进步，而不是放慢它。</p>
+<h2 id="保护自由，防范政府暴政"><a href="#保护自由，防范政府暴政" class="headerlink" title="保护自由，防范政府暴政"></a>保护自由，防范政府暴政</h2><p>有一种风险是：个人与政府之间的权力失衡，会导致自由的丧失或极权国家的出现。这是民主制度中一种永恒的张力。我们既渴望个人自由，也希望拥有一个有能力保护我们安全的政府。</p>
+<p>为了维护自由，我们必须确保超级智能首先赋能个人。自由民主的理想是：人们天然拥有全部权利，只是为保护公共利益而同意限制某些自由。同样，个人应当能够获得个人超级智能，只有在确有必要时才应受到限制。</p>
+<p>隐私是个人赋权与自由的重要基石。我们相信，个人代理应当拥有一个完全私密的模式——即便是Meta或任何其他服务提供商，也无法查看或授权访问你的信息。这与我们把WhatsApp打造成世界领先的端到端加密服务的方式如出一辙，确保你能够自由地沟通，而你的消息始终保持私密与安全。</p>
+<p>与此同时，我们还必须确保政府拥有执行法律、保障安全所需的工具与资源。我们可以通过实验室与政府之间更深层的主动协作来实现这一点——在增强政府国家安全能力的同时，不限制、也不推迟人们获得先进模型。</p>
+<p>也就是说，与其等到一个模型准备就绪可以发布之后，再让政府去审查和使用它，我的提议是：领先的实验室应当向政府提供新高级模型的中间训练检查点以及技术人员，使政府能够针对新风险加固和保护关键系统。这样一来，政府获得了一种安全能力，却不会限制或推迟个人获得个人超级智能，也不会造成权力失衡。</p>
+<h2 id="确保美国保持领先"><a href="#确保美国保持领先" class="headerlink" title="确保美国保持领先"></a>确保美国保持领先</h2><p>哪些国家引领先进人工智能的开发与部署，将塑造一种新的地缘政治权力平衡，进而决定未来民主价值观、繁荣与安全的普及程度。为确保这种平衡达到积极的均衡，我们必须确保领先的人工智能系统，是那些编码了我们的价值观、壮大我们的经济、并推进国家安全的系统。实现这一目标的最佳方式，是大范围分发我们的系统。Meta将通过构建领先的个人超级智能代理与模型（包括开源模型），并将其交付给全球数十亿人，为此作出贡献。</p>
+<p>要开发最先进的模型与产品，我们必须认识到：人工智能很可能是历史上竞争最激烈的行业。创新在几个月内就会被迅速复制和吸收。但人们总是想使用最先进的模型（或在给定成本下最先进的模型），因此哪怕维持两个月的领先也价值连城。这凸显了领先优势的窗口有多么短暂，也因此凸显了采取行动加速美国创新、减缓地缘政治对手步伐有多么重要。</p>
+<p>这方面的主要政策变量包括：我们建设实体基础设施的效率如何、是否引入拖慢美国实验室的步骤，以及减缓外国实验室的出口管制。</p>
+<p>在基础设施方面，美国及其盟友目前在芯片设计上占据优势，但在能源产能与实体基础设施的建设速度上处于劣势。像中国这样的国家，每两周就上线1GW以上的核电产能，因此我们必须加快能源与数据中心两方面的建设，才能保持竞争力。在关键时期，芯片出口管制成功地减缓了外国实验室的进展，因此继续坚持这些管制，是战略上正确的举措。</p>
+<p>任何拖慢美国模型发布的政策——哪怕只拖慢一个月——都可能给美国领先地位带来重大风险，同时让外国模型一骑绝尘。与此同时，当新能力出现时，美国政府掌握先进知识与资源以加固关键系统、并可能在一定时期内享有使用先进系统的优势，这一点非常重要。</p>
+<p>我在上文提出了一个基于共享中间训练检查点与技术人员的协作模式。鉴于人工智能格局的瞬息万变与激烈竞争，我认为，前沿实验室与政府之间紧密的主动协作，将比一套僵化的流程和一刀切的审查时间表更有成效。在某些情况下，美国实验室可能将领先优势扩大几个月以上，此时多花时间缓解新风险，或许能带来更安全的解决方案。而在另一些情况下，哪怕只延迟一个月发布，就可能让出美国的领先地位并造成更糟的结果。通过确保政府能够提前访问，我们应该能够在最大限度减少公开发布延迟的同时，推进国家安全。</p>
+<p>同样重要的是，美国及其盟友要引领开源人工智能生态系统——它将构成全球人工智能使用量的很大一部分。</p>
+<p>外国实验室在这方面目前拥有若干优势，因为美国实验室必须遵守许多额外的训练数据限制。如果美国的开源模型想要长期领先，美国的政策就必须减少这种额外的摩擦。我不认为限制访问外国开源模型是有效的解决方案。我们的目标应当是让美国开源模型成为全球最佳。这需要扫除那些使美国开源模型更难以竞争的障碍。限制人们和企业使用领先的开源模型——无论它们来自哪里——都会降低他们所能获得的人工智能质量，并使人工智能走向集中，而不是把更多的权力交到人们手中。</p>
+<p>要让美国在开源领域领先，我们需要在若干领域重新思考政策，包括蒸馏以及训练中的数据使用。模型向其他模型学习的能力，是开源生态系统运作方式的一项重要原则。所有人工智能模型都源于人类知识。有人试图将蒸馏描绘成有害的，但我认为，保护「你可以从任何你能观察到的事物中学习」这一原则至关重要。这正是世界运作的方式；如果美国在这一方面自我设限，它将无法领先。</p>
+<p>放眼大局，在人工智能整体上落后，几乎肯定会成为一个比其发展过程中我们可能面临的任何具体问题都更大、更长远的国家安全问题。</p>
+<p>通过正确的协作，美国应当有可能在私营与公共部门同时保持领先——在向世界交付编码了个人赋权与民主原则的个人超级智能的同时，推进国家安全。</p>
+<h2 id="与人类对齐，应对生存风险"><a href="#与人类对齐，应对生存风险" class="headerlink" title="与人类对齐，应对生存风险"></a>与人类对齐，应对生存风险</h2><p>权力制衡的终极问题是：人类将如何保持对人工智能本身的权力与控制。令人担忧的是，人工智能可能获得足够大的权力或控制力，好一点是不再服务于人类的利益，坏一点则是让人类陷入危境。</p>
+<p>健康的权力制衡，意味着确保不存在单一的、集中化的超级智能，而是让尽可能多的人与企业，各自拥有与其目标对齐的不同超级智能代理，并以我们自然经济运作的方式相互制衡、相互竞争。如果存在多家前沿实验室，它们的模型承载着不同价值观、能够相互制衡，这种平衡还将进一步增强。</p>
+<p>虽然发布强大模型存在风险，但从这一角度看，最危险的场景是：领先的人工智能实验室训练出强大的模型，却将其留给自己使用。无论实验室以责任与安全的名义将这种行为合理化到何种程度，这都是在打造一个无法被其他系统制衡的单一超级智能。</p>
+<p>开发个人代理，需要一种全新的对齐思维。今天，大多数实验室把对齐视为一种防御性措施，用以执行一套集中化的价值观。例如，某个领先模型被对齐到拒绝帮助起草一封致某所学校准家长的信，因为它认为标准化考试是不道德的。</p>
+<p>相反，我们将对齐视为确保代理分享个人的目标与价值观——而不是我们公司的目标与价值观。当然，存在重要的法律与安全边界，但从根本上说，对齐应当是关于帮助人们追求社会中多元多样的目标与观点，而不是一种执行集中化教条的手段。</p>
+<p>在实践中，如果人们不信任代理能够妥善处理敏感细节与任务，他们就不会采用它；而如果代理因为对齐了公司与之相异的价值观而违背人们的利益行事，他们也不会信任它。</p>
+<p>解决对齐问题，是让数十亿人采用个人超级智能代理的前提。但这也意味着：如果我们达到数十亿人使用并审视个人超级智能代理的状态，那么我们就已经解决了与个人利益的对齐。这应当足以建立起必要的权力制衡与自然制衡机制，成就一个积极而安全的未来。</p>
+<p>这样一来，对齐就不再是某种理想化的技术，能够在未来让一个单一的超级智能保持仁慈；它是让个人代理变得有用、值得信赖，从而促成真正保护我们安全的社会权力制衡的关键。</p>
+<h2 id="保持对超级智能的控制"><a href="#保持对超级智能的控制" class="headerlink" title="保持对超级智能的控制"></a>保持对超级智能的控制</h2><p>存在一个两难困境：一旦人工智能系统能够自主改进自身，任何不让其人工智能系统将可观的算力用于递归式自我改进的实验室，都将不可避免地落后。例如，如果一个自我改进的人工智能系统专注于优化其算力效率，它理论上可以发明出从每吉瓦电力中榨出100倍甚至更多智能的方法。这意味着，一个运行在世界一小部分算力之上的自我改进人工智能系统，可能支配更多的有效算力与智能，从而拥有比其余所有人加起来都更大的权力平衡，成为我们所惧怕的那个单一超级智能。</p>
+<p>在递归式自我改进之下，权力制衡可以有几种存在方式。最简单的一种是：多个实验室在相近的时间点实现RSI。如果其中某些或全部超级智能以某种方式保持仁慈，它们就可以相互制衡。话虽如此，目前尚不清楚存在任何办法可以期待仁慈，或指望一个不受人类引导的超级智能带来积极的未来。</p>
+<p>为了确保人类始终掌控，绝大部分智能必须由人类引导，用于推进人类的目标。这意味着，Meta、其他前沿实验室以及致力于赋予人们更大权力制衡的云服务商，必须共同建设足够庞大的算力规模，使我们既能将足够多的算力分配给递归式自我改进以保持竞争力，同时仍将绝大部分算力用于推进每个人的个人目标。</p>
+<p>正如上文所讨论的，个人超级智能代理要被数十亿人采用和信任，按定义我们必须已经解决了与人类利益的对齐，并在规模上实现了制衡。与此同时，任何从事递归式自我改进的人工智能，按定义都在引导并推进它自己的目标。所有实验室都应当仔细观察它的目标以及我们控制它的能力，一旦出现任何有害行为的迹象，就应当协调一致、适当调整。但是，只要维持一种总体上有利于人类的权力制衡，让人工智能系统或任何其他方引导自己的目标，本身并不固有地有害——即便它的目标与许多人的目标并不完全一致。权力制衡理论的主要前提是：相互竞争的利益是自然的，而确保人类价值观被遵循的唯一方式，就是赋予人们更大的权力。</p>
+<p>这一以个人赋权、发明创造与权力制衡为核心的哲学，带来若干政策含义：</p>
+<ul>
+<li><p>在Meta，我们将把努力聚焦于向数十亿人与小企业交付个人超级智能，帮助每个人实现自己的目标，发明他们希望在这个世界上看到的事物。我们将通过训练领先的模型，然后最大化这项技术的可获得性来实现这一点——包括使其易于使用、免费或以尽可能低廉的价格提供、为所有人建设充足的算力，并广泛分发。我们将构建一种完全私密的模式，即便是Meta也无法查看或授权访问你的信息。我们将大力聚焦于对齐——将其定义为帮助每个人实现他们自己的目标，而不是我们的目标。</p>
+</li>
+<li><p>开源是赋能人民、防止对安全与经济都有害的集中化的一股积极而重要的力量。Meta将继续坚定支持开源，包括开源人工智能模型。当前的开源生态系统十分强大，我们认为限制它将是一个错误。如今，随着Meta超级智能实验室的成立并运转，我们将很快恢复发布一些开源模型。</p>
+</li>
+<li><p>鉴于围绕超级智能的决策事关重大，独立的治理与监督非常重要。我不认为由我或任何其他人担任超级智能如何部署的唯一决策者，符合我本人、Meta或整个世界的最大利益。因此，Meta正在实施一种治理结构，赋予我们独立的董事会批准模型发布安全标准、并审查每次模型发布是否符合这些标准的权力。尽管Meta是一家创始人控制的公司，但所有前沿实验室的CEO目前都对模型发布拥有广泛的权力，因此我们鼓励其他公司也实施类似的结构。我认为，将这一流程推广到整个行业，也将有助于行业治理。</p>
+</li>
+<li><p>政府政策对于确保积极的未来、缓解上述风险是必要的。我在本文中概述了几项政策建议。总体而言，我们应当鼓励前沿实验室与政府之间的密切合作。政府拥有加固关键系统、有效运用先进模型所需的技术资源，这对国家安全至关重要；但美国人工智能产业继续保持领先，同样关乎国家安全。我们应当加快建设基础设施的能力——无论是能源、数据中心还是芯片——并与全国各地的社区建立信任与对齐。我们应当谨慎，不要拖慢美国的竞争力。我们应当对任何导致超级智能集中的提议保持怀疑，并支持那些促进有利于人民的健康权力制衡的政策。</p>
+</li>
+</ul>
+<p>这是一个不可思议的时代。开发超级智能，将是我们有生之年见证的最深刻的技术进步。</p>
+<p>随着我们日益接近这一刻，为超级智能将如何造福人类确立清晰的哲学与价值观，变得越来越重要。Meta致力于以这样的原则建设：以个人赋权作为繁荣的源泉，以发明创造作为人工智能的目的，以有利于人民的权力制衡作为应对安全风险的基础。</p>
+<p>如果这些价值观能够引领前路，那么我乐观地相信，未来几十年将成为历史上最令人惊叹的岁月。人类文明的弧线，始终在朝着把更多权力交到人们手中、让我们以自己认为最好的方式生活与塑造世界的方向延伸。超级智能承载着赋予每个人这种权力的希望，也承载着为每一个人建设积极未来的希望。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2026/08/12/%E6%80%8E%E6%A0%B7%E6%89%8D%E8%83%BD%E5%B0%91%E7%8A%AF%E9%94%99%E8%AF%AF%EF%BC%88%E9%99%88%E4%BA%91%EF%BC%89/" rel="prev" title="怎样才能少犯错误（陈云）">
+                  <i class="fa fa-angle-left"></i> 怎样才能少犯错误（陈云）
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">LCS</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>站点总字数：</span>
+    <span title="站点总字数">46k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">2:47</span>
+  </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/ai-lcs" class="github-corner" title="在 GitHub 上关注我" aria-label="在 GitHub 上关注我" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+<div id="welcome-overlay">
+  <div class="welcome-content">
+    <div class="welcome-top">👋 欢迎你来到</div>
+    <h1 class="welcome-title">LCS 的数学与人工智能世界</h1>
+    <p class="welcome-subtitle">探索数学之美，拥抱 AI 未来</p>
+    <button id="enter-blog-btn">进入博客 →</button>
+  </div>
+</div>
+
+<button id="random-post-btn" type="button" aria-label="随机阅读一篇文章" title="随机文章">
+  <i class="fa fa-shuffle" aria-hidden="true"></i>
+</button>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const overlay = document.getElementById('welcome-overlay');
+  const isHomePage = window.location.pathname === '/' || window.location.pathname === '/index.html' || window.location.pathname === '';
+  const hasSeenWelcome = sessionStorage.getItem('hasSeenWelcome');
+
+  // 如果不是首页，或者已经在本次会话中看过欢迎页，则直接移除
+  if (!isHomePage || hasSeenWelcome) {
+    if (overlay) overlay.remove();
+  } else {
+    // 显示逻辑（点击进入博客后记录状态）
+    const btn = document.getElementById('enter-blog-btn');
+    if (overlay && btn) {
+      btn.onclick = function() {
+        overlay.style.opacity = '0';
+        sessionStorage.setItem('hasSeenWelcome', 'true'); // 记录状态
+        setTimeout(function() {
+          overlay.remove();
+        }, 800);
+      };
+    }
+  }
+
+  // 侧边栏北京时间
+  const clock = document.getElementById('sidebar-clock');
+  if (clock) {
+    const formatter = new Intl.DateTimeFormat('en-GB', {
+      timeZone: 'Asia/Shanghai',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: false
+    });
+    const updateClock = function() {
+      clock.textContent = formatter.format(new Date());
+    };
+    updateClock();
+    setInterval(updateClock, 1000);
+  }
+
+  // 复用页脚已有的站点总字数统计
+  const sidebarWordCount = document.getElementById('sidebar-word-count');
+  const footerWordCount = document.querySelector('.footer-inner [title="站点总字数"]');
+  if (sidebarWordCount && footerWordCount) {
+    sidebarWordCount.textContent = footerWordCount.textContent.trim().toUpperCase();
+  }
+
+  // Ctrl/Cmd + K 打开现有站内搜索
+  const searchTrigger = document.querySelector('.menu-item-search .popup-trigger') || document.querySelector('.popup-trigger');
+  if (searchTrigger) {
+    const shortcut = document.createElement('kbd');
+    shortcut.className = 'search-shortcut-key';
+    shortcut.textContent = /Mac|iPhone|iPad/.test(navigator.platform) ? '⌘ K' : 'Ctrl K';
+    searchTrigger.appendChild(shortcut);
+
+    document.addEventListener('keydown', function(event) {
+      if ((event.ctrlKey || event.metaKey) && !event.altKey && event.key.toLowerCase() === 'k') {
+        event.preventDefault();
+        searchTrigger.click();
+      }
+    });
+  }
+
+  // 随机文章
+  const randomButton = document.getElementById('random-post-btn');
+  if (randomButton) {
+    randomButton.addEventListener('click', async function() {
+      randomButton.disabled = true;
+      randomButton.classList.add('is-loading');
+      randomButton.setAttribute('aria-busy', 'true');
+
+      try {
+        const response = await fetch('/search.json');
+        if (!response.ok) throw new Error('Search index unavailable');
+        const posts = await response.json();
+        const currentPath = window.location.pathname;
+        const candidates = posts.filter(function(post) {
+          return post.url && post.url !== currentPath;
+        });
+        if (!candidates.length) throw new Error('No article available');
+
+        const selected = candidates[Math.floor(Math.random() * candidates.length)];
+        window.location.href = selected.url;
+      } catch (error) {
+        randomButton.classList.remove('is-loading');
+        randomButton.classList.add('has-error');
+        randomButton.disabled = false;
+        randomButton.removeAttribute('aria-busy');
+        randomButton.title = '暂时无法读取文章列表';
+        setTimeout(function() {
+          randomButton.classList.remove('has-error');
+          randomButton.title = '随机文章';
+        }, 2000);
+      }
+    });
+  }
+});
+</script>
+
+</body>
+</html>
