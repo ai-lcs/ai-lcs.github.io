@@ -346,42 +346,12 @@
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
 </noscript>
-<div id="welcome-overlay">
-  <div class="welcome-content">
-    <div class="welcome-top">👋 欢迎你来到</div>
-    <h1 class="welcome-title">LCS 的数学与人工智能世界</h1>
-    <p class="welcome-subtitle">探索数学之美，拥抱 AI 未来</p>
-    <button id="enter-blog-btn">进入博客 →</button>
-  </div>
-</div>
-
 <button id="random-post-btn" type="button" aria-label="随机阅读一篇文章" title="随机文章">
   <i class="fa fa-shuffle" aria-hidden="true"></i>
 </button>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  const overlay = document.getElementById('welcome-overlay');
-  const isHomePage = window.location.pathname === '/' || window.location.pathname === '/index.html' || window.location.pathname === '';
-  const hasSeenWelcome = sessionStorage.getItem('hasSeenWelcome');
-
-  // 如果不是首页，或者已经在本次会话中看过欢迎页，则直接移除
-  if (!isHomePage || hasSeenWelcome) {
-    if (overlay) overlay.remove();
-  } else {
-    // 显示逻辑（点击进入博客后记录状态）
-    const btn = document.getElementById('enter-blog-btn');
-    if (overlay && btn) {
-      btn.onclick = function() {
-        overlay.style.opacity = '0';
-        sessionStorage.setItem('hasSeenWelcome', 'true'); // 记录状态
-        setTimeout(function() {
-          overlay.remove();
-        }, 800);
-      };
-    }
-  }
-
   // 侧边栏北京时间
   const clock = document.getElementById('sidebar-clock');
   if (clock) {
